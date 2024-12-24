@@ -1,0 +1,151 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Contact Us
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header li {
+            margin-right: 20px;
+        }
+
+        .header a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .header a:hover {
+            color: #e91e63;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 400px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+        }
+
+        .contact-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #e91e63;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form input[type="submit"] {
+            background: #e91e63;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background: #c2185b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <ul>
+            <li>
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="abt">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="shop">
+                    Shop
+                </a>
+            </li>
+            <li>
+                <a href="cont">
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="contact-form">
+        <h1>
+            Contact Us
+        </h1>
+        <form action="contact" method="post">
+            <label for="uname">
+                Name:
+            </label>
+            <input id="name" name="uname" type="text" />
+            <label for="email">
+                Email:
+            </label>
+            <input id="email" name="email" type="email" />
+
+            <label for="msg">
+                Message:
+            </label>
+            <textarea id="message" name="msg" rows="5">
+    </textarea>
+            <input type="submit" value="Send" />
+        </form>
+    </div>
+</body>
+
+</html>

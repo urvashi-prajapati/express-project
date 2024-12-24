@@ -1,0 +1,135 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Jewelry Home Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero-text {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+  </style>
+  <script>
+   function showPrice(price) {
+            alert("The price of this item is $" + price);
+        }
+  </script>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-gray-800 text-white py-6">
+   <h1 class="text-5xl font-bold font-playfair text-center">
+    UV Jewelry Store
+   </h1>
+  </header>
+  <nav class="bg-gray-700 text-white py-5">
+   <div class="container mx-auto flex justify-center space-x-6">
+    <a class="hover:text-yellow-400"  href="/">
+     Home
+    </a>
+    <a class="hover:text-yellow-400" href="shop">
+     Shop
+    </a>
+    <a class="hover:text-yellow-400" href="sbt">
+     About
+    </a>
+    <a class="hover:text-yellow-400" href="cont">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <div class="hero relative text-center text-white">
+   <img alt="A luxurious display of various jewelry pieces including necklaces, rings, and bracelets" class="w-full h-[500px] object-cover" src="https://storage.googleapis.com/a1aa/image/ClBbuRrTFt4bBVO8P1DamVBNCbWIHPzHoGtHIvereTXwz41TA.jpg"/>
+  
+   </div>
+  </div>
+  <div class="products container mx-auto py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+   <div class="product bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+    <img alt="A close-up of a diamond ring with intricate detailing" class="w-full h-auto rounded-lg" src="https://storage.googleapis.com/a1aa/image/wa6CxtjDRMpoMZK6LOygaa9T3EdXvDrMvrBTGSSuHiW7Me6JA.jpg"/>
+    <h3 class="text-2xl font-playfair mt-4 font-bold">
+     Diamond Ring
+    </h3>
+    <p class="text-gray-600 mt-2">
+     Exquisite diamond ring with a timeless design.
+    </p>
+    <button class="mt-4 bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500" onclick="showPrice(500)">
+     Buy Now
+    </button>
+   </div>
+   <div class="product bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+    <img alt="A gold necklace with a delicate pendant" class="w-full h-auto rounded-lg" src="https://storage.googleapis.com/a1aa/image/YKl6fjdTw3QmcyppIIuhFdkFqci33vxPzfzXFLYc5vqyz41TA.jpg"/>
+    <h3 class="text-2xl font-playfair mt-4 font-bold">
+     Gold Necklace
+    </h3>
+    <p class="text-gray-600 mt-2">
+     Elegant gold necklace perfect for any occasion.
+    </p>
+    <button class="mt-4 bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500" onclick="showPrice(300)">
+     Buy Now
+    </button>
+   </div>
+   <div class="product bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+    <img alt="A pair of sapphire earrings with a sparkling finish" class="w-full h-auto rounded-lg" src="https://storage.googleapis.com/a1aa/image/RmB7Cj4tNS4NGJeZWV7LHTwf3o4NIsUOxWCQPygmmEbrz41TA.jpg"/>
+    <h3 class="text-2xl font-playfair mt-4 font-bold">
+     Sapphire Earrings
+    </h3>
+    <p class="text-gray-600 mt-2">
+     Stunning sapphire earrings that catch the light beautifully.
+    </p>
+    <button class="mt-4 bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500" onclick="showPrice(200)">
+     Buy Now
+    </button>
+   </div>
+   <div class="product bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+    <img alt="A silver bracelet with intricate patterns" class="w-full h-auto rounded-lg" src="https://storage.googleapis.com/a1aa/image/WTeUzrVHP7SFTKDGvQijBEy66CzIb9U7EWDAxFX0kH33Z86JA.jpg"/>
+    <h3 class="text-2xl font-playfair mt-4 font-bold">
+     Silver Bracelet
+    </h3>
+    <p class="text-gray-600 mt-2">
+     Chic silver bracelet with detailed craftsmanship.
+    </p>
+    <button class="mt-4 bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500" onclick="showPrice(150)">
+     Buy Now
+    </button>
+   </div>
+   <div class="product bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+    <img alt="A pearl necklace with a classic design" class="w-full h-auto rounded-lg" src="https://storage.googleapis.com/a1aa/image/IZt5hUfpW2T5K6PcVmQieLKlJjxkdhakQ1cjHuvwyTtsz41TA.jpg"/>
+    <h3 class="text-2xl font-playfair mt-4 font-bold">
+     Pearl Necklace
+    </h3>
+    <p class="text-gray-600 mt-2">
+     Classic pearl necklace that exudes sophistication.
+    </p>
+    <button class="mt-4 bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500" onclick="showPrice(250)">
+     Buy Now
+    </button>
+   </div>
+   <div class="product bg-white p-6 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+    <img alt="A ruby ring with a bold and vibrant color" class="w-full h-auto rounded-lg" src="https://storage.googleapis.com/a1aa/image/Km2QKP1afWyoNqfx20YwqAfc7hKV8pi4g4JhcCjvVsynnxrnA.jpg"/>
+    <h3 class="text-2xl font-playfair mt-4 font-bold">
+     Ruby Ring
+    </h3>
+    <p class="text-gray-600 mt-2">
+     Bold ruby ring that makes a statement.
+    </p>
+    <button class="mt-4 bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-500" onclick="showPrice(400)">
+     Buy Now
+    </button>
+   </div>
+  </div>
+  <footer class="bg-gray-800 text-white text-center py-6">
+   © 2023 Jewelry Store. All rights reserved.
+  </footer>
+ </body>
+</html>
